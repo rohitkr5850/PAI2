@@ -45,7 +45,7 @@ var authID = authenticatinID(code,email);
 console.log("Authenti ID:",authID);
 
 
-let apiUrl = `https://questionmapping.onrender.com/api/problem/{authID}`;
+let apiUrl = `https://questionmapping.onrender.com/api/problem/${authID}`;
 
 fetch(apiUrl)
 .then(response => response.json())
